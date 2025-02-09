@@ -1,1 +1,74 @@
-<h1 class="text-3xl font-bold text-blue-500">Hello Tailwind!</h1>
+<body class="bg-custom-50">
+<!-- Navigation -->
+<nav class="mx-auto mt-10 w-fit" id="main-nav">
+  <ul class="flex justify-between items-center border rounded-full p-2 bg-custom-800 text-white text-lg transition gap-10">
+    <li class="bg-custom-500 px-5 py-3 rounded-3xl m-1 hover:bg-custom-400 transition-colors"><a href="#home">Accueil</a></li>
+    <li class="hover:bg-custom-500 px-5 py-3 rounded-3xl m-1 transition-colors"><a href="#services">Services</a></li>
+    <li class="hover:bg-custom-500 px-5 py-3 rounded-3xl m-1 transition-colors"><a href="#projects">Projets</a></li>
+    <li class="hover:bg-custom-500 px-5 py-3 rounded-3xl m-1 transition-colors"><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="min-h-[80vh] flex flex-col items-center justify-center">
+  <div class="text-center">
+    <div class="inline-block relative">
+      <button class="border-2 border-custom-500 rounded-xl px-4 py-2 mb-4 text-custom-500 hover:bg-custom-50 transition-colors">
+        Salut !
+      </button>
+      <img src="/assets/Julien_CASTRO-removebg-preview.png" alt="splash" class="absolute -right-8 -top-6 w-16">
+    </div>
+    <h1 class="text-5xl mt-3 text-custom-800">
+      Salut, Je suis <a href="https://linkedin.com/in/Julien-Castro" class="text-custom-500 hover:text-custom-400 transition-colors">Julien</a>
+      <br>un développeur
+    </h1>
+    <div class="mt-8 experience-badge">
+      <p class="text-6xl font-bold text-custom-500">2 ans</p>
+      <span class="font-bold text-custom-800">d'expérience</span>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 bg-gradient-to-b from-custom-800 to-custom-900 text-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Mes <span class="text-custom-300">Services</span></h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="services-grid">
+      <!-- Card example -->
+      <div class="bg-custom-700/50 backdrop-blur-sm p-6 rounded-xl hover:bg-custom-700/70 transition-all transform hover:-translate-y-1 border border-custom-600">
+        <div class="text-4xl mb-4">🌐</div>
+        <h3 class="text-xl font-bold mb-2">Développement Web</h3>
+        <p class="text-custom-200">Création de sites web modernes et responsives</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-gradient-to-b from-custom-50 to-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12 text-custom-800">Mon <span class="text-custom-500">Parcours</span></h2>
+    <div class="max-w-3xl mx-auto" id="experience-timeline">
+      <!-- Experience item example -->
+      <div class="mb-8 p-6 bg-white rounded-xl shadow-lg border border-custom-100 hover:border-custom-300 transition-colors">
+        <h3 class="text-2xl font-bold text-custom-700">Développeur</h3>
+        <p class="text-custom-500">Stage chez Rolex</p>
+        <p class="text-custom-400">6 mois</p>
+        <p class="mt-2 text-custom-600">Développement d'applications web internes</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<footer class="bg-custom-800 text-white p-6">
+  <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <h2 class="text-2xl font-semibold">Une idée, un projet, une envie ?</h2>
+    <a href="mailto:contact@example.com"
+       class="bg-custom-500 text-white py-2 px-4 rounded-lg flex items-center hover:bg-custom-400 transition-all duration-300 hover:shadow-lg mt-4 md:mt-0 group">
+      Contactez-moi
+      <span class="ml-2 transform group-hover:translate-x-1 transition-transform">↗</span>
+    </a>
+  </div>
+</footer>
+</body>
