@@ -337,6 +337,60 @@ body {
 #main-nav ul li:hover {
   background-color: rgba(138, 43, 226, 0.8);
 }
+/* Extra small devices (min-width: 320px) */
+@media (min-width: 320px) {
+  .hero-container {
+    min-height: 300px;
+  }
+
+  .hero-image-container {
+    padding-top: 80%;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    padding: 0.25rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    min-width: auto;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .experience-badge {
+    transform: scale(0.7);
+    margin: 0.5rem auto;
+  }
+
+  .half-circle {
+    height: 50%;
+  }
+
+  #main-nav {
+    padding: 0.25rem;
+  }
+
+  #main-nav ul {
+    gap: 0.25rem;
+  }
+
+  #main-nav ul li {
+    padding: 0.5rem;
+  }
+
+
+  .svg-background {
+    height: 60%;
+  }
+}
+
 @media (min-width: 640px) {
   #main-nav ul {
     flex-direction: row;
