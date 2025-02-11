@@ -1,6 +1,7 @@
 <body class="bg-custom-50">
+
 <!-- Navigation -->
-<nav class="mx-auto mt-10 w-fit" id="main-nav">
+<nav class="mx-auto w-fit" id="main-nav">
   <ul class="flex justify-between items-center border rounded-full p-2 bg-custom-800 text-white text-lg transition gap-10">
     <li class="bg-custom-500 px-5 py-3 rounded-3xl m-1 hover:bg-custom-400 transition-colors"><a href="#home">Accueil</a></li>
     <li class="hover:bg-custom-500 px-5 py-3 rounded-3xl m-1 transition-colors"><a href="#services">Services</a></li>
@@ -9,25 +10,74 @@
   </ul>
 </nav>
 
-<!-- Hero Section -->
-<section id="home" class="min-h-[80vh] flex flex-col items-center justify-center">
-  <div class="text-center">
-    <div class="inline-block relative">
-      <button class="border-2 border-custom-500 rounded-xl px-4 py-2 mb-4 text-custom-500 hover:bg-custom-50 transition-colors">
-        Salut !
-      </button>
-      <img src="/assets/Julien_CASTRO-removebg-preview.png" alt="splash" class="absolute -right-8 -top-6 w-16">
-    </div>
+<section id="home" class="min-h-[80vh] flex flex-col items-center justify-center w-full">
+  <div class="mt-10 text-center relative w-full max-w-6xl mx-auto px-4">
+  <!-- Greeting button with small splash -->
+  <div class="flex justify-center relative w-fit mx-auto"> <!-- Changé en flex et centré -->
+    <button class="border-2 border-custom-500 rounded-xl px-4 py-2 mb-4 text-custom-500 hover:bg-custom-50 transition-colors">
+      Salut !
+    </button>
+    <svg class="absolute -right-10 -top-8 h-10" viewBox="0 0 33 33" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2.74512 20C2.74512 17 5.74512 11 2.74512 2M10.2451 23.5C14.5785 19.3333 23.4451 9.2 24.2451 2M13.2451 30.5C15.9118 30.5 23.0451 29.1 30.2451 23.5"
+            stroke="#8A2BE2"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <!-- Main heading avec grand splash -->
+  <div class="flex-col justify-start relative w-fit mx-auto"> <!-- Changé en flex-col et centré -->
     <h1 class="text-5xl mt-3 text-custom-800">
       Salut, Je suis <a href="https://linkedin.com/in/Julien-Castro" class="text-custom-500 hover:text-custom-400 transition-colors">Julien</a>
       <br>un développeur
     </h1>
-    <div class="mt-8 experience-badge">
+    <img src="../assets/grandSplash.png" alt="grand splash" class="absolute -bottom-15 -left-10">
+  </div>
+
+    <!-- Experience badge with stars -->
+    <div class="experience-badge">
+      <svg class="h-8 mb-2" viewBox="0 0 100 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" fill="#8A2BE2"/>
+        <path d="M40 15l-5.878 3.09 1.123-6.545L30.489 6.91l6.572-.955L40 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" fill="#8A2BE2"/>
+        <path d="M70 15l-5.878 3.09 1.123-6.545L60.489 6.91l6.572-.955L70 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" fill="#8A2BE2"/>
+      </svg>
       <p class="text-6xl font-bold text-custom-500">2 ans</p>
       <span class="font-bold text-custom-800">d'expérience</span>
     </div>
+
+    <div class="hero-container">
+      <div class="svg-background">
+        <svg viewBox="0 0 812 406" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <path d="M811.779 405.889C541.186 405.889 270.593 405.889 0 405.889C0 181.723 181.723 0 405.889 0C630.056 0 811.779 181.723 811.779 405.889Z" fill="#8A2BE2"/>
+        </svg>
+      </div>
+      <img src="/assets/Julien_CASTRO-removebg-preview.png" alt="julien" class="hero-image slide-in-right"/>
+    </div>
+
+    <!-- Buttons -->
+    <div class="hero-buttons glass-effect">
+      <button class="hero-btn bg-custom-500 text-white">
+        <span>Portfolio</span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor">
+          <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/>
+        </svg>
+      </button>
+      <button class="hero-btn hover:bg-custom-500 hover:text-white">
+        <span>Contact</span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor">
+          <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/>
+        </svg>
+      </button>
+    </div>
   </div>
+
 </section>
+
+
+
+
+
 
 <!-- Services Section -->
 <section id="services" class="py-20 bg-gradient-to-b from-custom-800 to-custom-900 text-white">
