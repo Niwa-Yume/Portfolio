@@ -337,3 +337,66 @@ body {
 #main-nav ul li:hover {
   background-color: rgba(138, 43, 226, 0.8);
 }
+@media (min-width: 640px) {
+  #main-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #main-nav ul li {
+    width: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .hero-btn {
+    width: auto;
+    min-width: 140px;
+  }
+
+  .experience-badge {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    margin: 0;
+  }
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) {
+  #main-nav ul {
+    gap: 1.5rem;
+  }
+
+  .hero-image-container {
+    max-width: 40rem;
+  }
+
+  .svg-background {
+    height: 70%;
+  }
+}
+
+/* Large devices (lg) */
+@media (min-width: 1024px) {
+  #main-nav ul {
+    gap: 2.5rem;
+  }
+
+  .hero-image-container {
+    max-width: 48rem;
+  }
+
+  .svg-background {
+    height: 80%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
