@@ -504,3 +504,56 @@ body {
   }
 }
 
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.banner {
+  display: flex;
+  width: 150%;
+  height: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+.banner img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: -20px;
+}
+
+/* Added for the infinite marquee animation */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+.marquee img {
+  width: 20%;
+  margin-right: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

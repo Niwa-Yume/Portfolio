@@ -1,8 +1,8 @@
 <body class="bg-custom-50">
 
 <!-- Navigation -->
-<nav class="mx-auto w-fit" id="main-nav">
-  <ul class="flex justify-between items-center border rounded-full p-2 bg-custom-800 text-white text-lg transition gap-10">
+<nav class="mx-auto w-fit glass-effect" id="main-nav">
+  <ul class="flex justify-between glass-effect items-center border rounded-full p-2 bg-custom-800 text-white text-lg transition gap-10">
     <li class="bg-custom-500 px-5 py-3 rounded-3xl m-1 hover:bg-custom-400 transition-colors"><a href="#home">Accueil</a></li>
     <li class="hover:bg-custom-500 px-5 py-3 rounded-3xl m-1 transition-colors"><a href="#services">Services</a></li>
     <li class="hover:bg-custom-500 px-5 py-3 rounded-3xl m-1 transition-colors"><a href="#projects">Projets</a></li>
@@ -10,10 +10,13 @@
   </ul>
 </nav>
 
-<section id="home" class="min-h-[80vh] flex flex-col items-center justify-center w-full">
-  <div class="mt-10 text-center relative w-full max-w-6xl mx-auto px-4">
+
+
+<!-- Hero Section -->
+<section id="home" class="min-h-[80vh] flex mt-5 flex-col items-center justify-center w-full">
+  <div class=" text-center relative w-full max-w-6xl mx-auto px-4">
   <!-- Greeting button with small splash -->
-  <div class="flex justify-center relative w-fit mx-auto"> <!-- Changé en flex et centré -->
+  <div class="mt-10 flex justify-center relative w-fit mx-auto"> <!-- Changé en flex et centré -->
     <button class="border-2 border-custom-500 rounded-xl px-4 py-2 mb-4 text-custom-500 hover:bg-custom-50 transition-colors">
       Salut !
     </button>
@@ -70,10 +73,6 @@
 </section>
 
 
-
-
-
-
 <!-- Services Section -->
 <section id="services" class="relative py-20 text-white overflow-hidden">
   <!-- Background iframe container -->
@@ -82,7 +81,7 @@
   </div>
 
   <!-- Content container with backdrop filter for better readability -->
-  <div class="relative z-10 container mx-auto px-4">
+  <div class="relative container mx-auto px-4">
     <h2 class="text-4xl font-bold text-center mb-12">Mes <span class="text-custom-300">Services</span></h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="services-grid">
       <!-- Web Development Card -->
@@ -124,31 +123,195 @@
   </div>
 </section>
 
-<!-- Experience Section -->
-<section id="experience" class="py-20 bg-gradient-to-b from-custom-50 to-white">
-  <div class="container mx-auto px-4">
-    <h2 class="text-4xl font-bold text-center mb-12 text-custom-800">Mon <span class="text-custom-500">Parcours</span></h2>
-    <div class="max-w-3xl mx-auto" id="experience-timeline">
-      <!-- Experience item example -->
-      <div class="mb-8 p-6 bg-white rounded-xl shadow-lg border border-custom-100 hover:border-custom-300 transition-colors">
-        <h3 class="text-2xl font-bold text-custom-700">Développeur</h3>
-        <p class="text-custom-500">Stage chez Rolex</p>
-        <p class="text-custom-400">6 mois</p>
-        <p class="mt-2 text-custom-600">Développement d'applications web internes</p>
+<!-- WORK EXPERIENCE -->
+<section class="work-experience bg-gray-50">
+  <div class="container mx-auto px-4 py-16">
+    <!-- En-tête -->
+    <h2 class="text-4xl font-bold text-center mb-16">
+      Mon <span class="text-custom-500">Expérience professionnelle</span>
+    </h2>
+
+    <!-- Container principal -->
+    <div class="relative flex flex-col md:flex-row justify-between items-start md:items-center max-w-7xl mx-auto">
+      <!-- Colonne gauche -->
+      <div class="w-full md:w-1/2 space-y-12 relative z-10 md:pr-8">
+        <!-- Rolex -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Rolex</h3>
+          <p class="text-zinc-500">Stage en tant que développeur - 6 mois</p>
+        </div>
+
+        <!-- Noctinium -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Noctinium</h3>
+          <p class="text-zinc-500">sep 2022 - Aujourd'hui</p>
+        </div>
+
+        <!-- Infomaniak -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Infomaniak</h3>
+          <p class="text-zinc-500">Novembre 2023 - Décembre 2023</p>
+        </div>
+
+        <!-- Flow Bank -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Flow Bank</h3>
+          <p class="text-zinc-500">Janvier 2023 - Mars 2023</p>
+        </div>
+      </div>
+
+      <!-- Timeline centrale -->
+      <div class="hidden md:flex flex-col items-center absolute left-1/2 h-full transform -translate-x-1/2">
+        <div class="w-4 h-4 bg-custom-300 border-4 border-white rounded-full mb-8 shadow-md"></div>
+        <div class="w-0.5 h-20 bg-gray-300 mb-8"></div>
+        <div class="w-4 h-4 bg-custom-500 border-4 border-white rounded-full mb-8 shadow-md"></div>
+        <div class="w-0.5 h-20 bg-gray-300 mb-8"></div>
+        <div class="w-4 h-4 bg-custom-300 border-4 border-white rounded-full mb-8 shadow-md"></div>
+        <div class="w-0.5 h-20 bg-gray-300 mb-8"></div>
+        <div class="w-4 h-4 bg-custom-500 border-4 border-white rounded-full shadow-md"></div>
+      </div>
+
+      <!-- Colonne droite -->
+      <div class="w-full md:w-1/2 md:pl-8 space-y-12 relative z-10">
+        <!-- Développeur -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Développeur</h3>
+          <p class="text-zinc-600 leading-relaxed">Stage chez Rolex pendant 6 mois, où j'ai travaillé sur divers projets de développement web et d'applications internes.</p>
+        </div>
+
+        <!-- Fondateur -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Fondateur</h3>
+          <p class="text-zinc-600 leading-relaxed">Projet personnel où j'organise des événements et une plateforme pour référencer les événements de la ville de Genève</p>
+        </div>
+
+        <!-- Support technique -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Support technique 1 et 2 Spécialiste Ksuite</h3>
+          <p class="text-zinc-600 leading-relaxed">Première expérience dans le monde de la tech. J'ai pu mettre un premier pied dedans et me plonger sur d'autres aspects que je n'avais jamais pu faire avant.</p>
+        </div>
+
+        <!-- Sales Trader -->
+        <div class="bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300 border border-gray-100">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-3">Sales Trader</h3>
+          <p class="text-zinc-600 leading-relaxed">J'ai pu apprendre à gérer des clients et à comprendre les besoins de chacun. J'ai pu aussi apprendre à gérer des situations de stress et à être réactif.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact Section -->
-<footer class="bg-custom-800 text-white p-6">
+<!-- POURQUOI MOI -->
+<section class="pb-10">
+  <div class="relative bg-custom-500 p-8 rounded-t-lg overflow-hidden flex items-center justify-center">
+    <div class="absolute w-full h-full flex items-center justify-center overflow-hidden">
+      <div class="marquee animate-marquee whitespace-nowrap text-2xl font-bold text-white">
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+      </div>
+      <div class="marquee animate-marquee whitespace-nowrap text-2xl font-bold text-white">
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div
+    class="bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg p-12 flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-12">
+    <img src="assets/Julien_CASTRO-removebg-preview.png" alt="Profile Picture" class="">
+    <div class="text-center md:text-left max-w-2xl">
+      <h2 class="text-5xl font-bold text-gray-800">Pourquoi <span class="text-custom-500">me
+                            choisir</span> ?</h2>
+      <p class="text-gray-600 mt-6 text-lg leading-relaxed">
+        En tant qu'étudiant passionné par le numérique et les nouvelles technologies, je suis motivé par
+        les opportunités qu'ils offrent. Je souhaite m'impliquer activement dans des domaines comme la
+        blockchain, l'intelligence artificielle et les fintech, qui révolutionnent divers secteurs. Ma
+        curiosité insatiable et ma volonté d'apprendre me poussent à relever les défis pour contribuer à
+        leur développement.</p>
+      <div class="flex justify-center md:justify-start space-x-12 mt-8">
+        <div>
+          <p class="text-4xl font-bold text-gray-800">50+</p>
+          <p class="text-gray-600">Projets Complétés</p>
+        </div>
+        <div>
+          <p class="text-4xl font-bold text-gray-800">20+</p>
+          <p class="text-gray-600">Clients Satisfaits</p>
+        </div>
+      </div>
+      <a href="/contact/index.html">
+        <button
+          class="mt-8 px-8 py-3 bg-custom-500 text-white rounded-full hover:bg-custom-800 transition">Choisissez-moi</button>
+      </a>
+
+    </div>
+  </div>
+</section>
+<section class="pb-10">
+  <div class="relative bg-custom-500 p-8 rounded-t-lg overflow-hidden flex items-center justify-center">
+    <div class="absolute w-full h-full flex items-center justify-center overflow-hidden">
+      <div class="marquee animate-marquee whitespace-nowrap text-2xl font-bold text-white">
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+      </div>
+      <div class="marquee animate-marquee whitespace-nowrap text-2xl font-bold text-white">
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+        <span class="mx-4">✦ UX Design</span>
+        <span class="mx-4">✦ App Design</span>
+        <span class="mx-4">✦ Dashboard</span>
+        <span class="mx-4">✦ Wireframe</span>
+        <span class="mx-4">✦ User Research</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER Section -->
+<footer class="bg-custom-800 text-white p-6 relative">
   <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
     <h2 class="text-2xl font-semibold">Une idée, un projet, une envie ?</h2>
+    <a
+      href="#main-nav"
+      class="bg-custom-500 p-2 rounded-full text-white hover:bg-custom-400"
+    >
+      ↑
+    </a>
     <a href="mailto:contact@example.com"
        class="bg-custom-500 text-white py-2 px-4 rounded-lg flex items-center hover:bg-custom-400 transition-all duration-300 hover:shadow-lg mt-4 md:mt-0 group">
       Contactez-moi
       <span class="ml-2 transform group-hover:translate-x-1 transition-transform">↗</span>
     </a>
   </div>
+
+
 </footer>
 </body>
