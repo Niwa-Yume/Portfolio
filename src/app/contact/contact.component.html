@@ -1,1 +1,70 @@
-<p>contact works!</p>
+<div id="app" class="bg-gradient-to-b from-white via-custom-50 via-custom-100 to-custom-200">
+
+  <section class="flex items-center justify-center flex-grow p-4">
+    <div class="max-w-2xl w-full p-8 shadow-2xl rounded-lg bg-white">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold mb-4">
+          J'adorerais avoir de vos nouvelles,<br />
+          Contactez-moi <span class="text-custom-500">!</span>
+        </h1>
+        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png"
+             alt="Waving Hand" width="50" height="50" class="mx-auto" />
+      </div>
+
+      <form class="space-y-4 mt-8" action="https://formspree.io/f/xknddkwj" method="POST">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="name" class="block text-sm font-medium text-zinc-700">Votre Nom</label>
+            <input type="text" id="name" name="name" required placeholder="Edward Snowden"
+                   class="mt-1 block w-full p-2 border border-zinc-300 rounded-md" />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-zinc-700">Votre email</label>
+            <input type="email" id="email" name="email" required placeholder="itanexmple@gmail.com"
+                   class="mt-1 block w-full p-2 border border-zinc-300 rounded-md" />
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label for="interest" class="block text-sm font-medium text-zinc-700">Ce qui vous intéresse</label>
+            <select id="interest" name="interest"
+                    class="mt-1 block w-full p-2 border border-zinc-300 rounded-md">
+              <option>Création de site web</option>
+              <option>Création de bot</option>
+              <option>Analyse des besoins</option>
+            </select>
+          </div>
+          <div>
+            <label for="budget" class="block text-sm font-medium text-zinc-700">Budget du Projet</label>
+            <select id="budget" name="budget"
+                    class="mt-1 block w-full p-2 border border-zinc-300 rounded-md">
+              <option>Sélectionnez votre budget</option>
+              <option>500 CHF - 1000 CHF</option>
+              <option>1000 CHF - 5000 CHF</option>
+              <option>+5000 CHF</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-zinc-700">Message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Donner moi des détails sur votre projet ici..."
+                    class="mt-1 block w-full p-2 border border-zinc-300 rounded-md"></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="w-full bg-custom-500 text-white py-2 rounded-md flex items-center justify-center">
+            Envoyer <span class="ml-2">↗</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="text-center  mt-8">
+        <p class="text-lg">Ou prenez directement rendez-vous avec moi :</p>
+        <a href="https://cal.com/julien.castro" target="_blank" class="inline-block bg-custom-500 mt-4 text-white py-2 px-4 rounded-md">Prendre un rendez-vous</a>
+      </div>
+    </div>
+  </section>
+</div>
+
+

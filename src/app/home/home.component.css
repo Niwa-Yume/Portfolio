@@ -1,0 +1,17 @@
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+  /* Use ease-out to smooth the end of the animation */
+  animation-fill-mode: forwards;
+}
