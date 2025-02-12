@@ -2,3 +2,558 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  min-height: 100vh;
+}
+/* CSS spécifique pour le conteneur et le SVG */
+.hero-container {
+  @apply relative w-full max-w-2xl mx-auto h-full flex items-end;
+  min-height: 500px; /* Ajustez selon vos besoins */
+}
+
+.svg-background {
+  @apply absolute inset-x-0 bottom-0 w-full;
+  height: 80%; /* Ajustez cette valeur pour contrôler la hauteur du demi-cercle */
+}
+
+.svg-background svg {
+  @apply w-full h-full;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Assurez-vous que l'image reste bien positionnée */
+.hero-image {
+  @apply relative z-10 w-full h-auto;
+  margin-bottom: 0;
+}
+#home {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Assure que le contenu remplit l'espace vertical */
+}
+
+.relative.w-full.max-w-3xl {
+  position: relative;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.absolute.inset-0 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.absolute.inset-0 svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.half-circle svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  transform: scale(1.1); /* Assure que le SVG touche les bords */
+}
+
+/* Animation for slide in effect */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Hero image container */
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  max-width: 2xl;
+  margin: 0 auto;
+  padding-top: 40%; /* Réduit de 50% à 40% pour un ratio plus compact */
+}
+
+.hero-image-container .absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-in-right {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  z-index: 10;
+}
+
+/* Experience badge styling */
+.experience-badge {
+  animation: float 3s ease-in-out infinite;
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  text-align: center;
+  z-index: 20;
+}
+
+/* Half circle background */
+.half-circle {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.half-circle svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero buttons container */
+.hero-buttons {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.25rem;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  z-index: 30;
+}
+
+/* Glass effect for button container */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hero button styling */
+.hero-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  min-width: 140px;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-btn span {
+  z-index: 1;
+}
+
+.hero-btn svg {
+  position: absolute;
+  right: 10px;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+}
+
+.hero-btn:hover svg {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+.hero-btn:hover {
+  padding-right: 2.5rem;
+}
+
+/* Image animations */
+.slide-in-right {
+  animation: slideInFromRight 1s ease-out forwards;
+  animation-fill-mode: forwards;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* Splash image positioning */
+.splash-small {
+  position: absolute;
+  right: -2.5rem;
+  top: -2rem;
+  z-index: 2;
+  height: 2.5rem;
+}
+
+.splash-large {
+  position: absolute;
+  bottom: -3.75rem;
+  left: -2.5rem;
+  z-index: 2;
+  height: 8rem;
+}
+
+/* Services Section */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section */
+.experience-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.experience-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effects */
+.hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-effect::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.hover-effect:hover::after {
+  width: 200px;
+  height: 200px;
+}
+
+/* Custom background colors */
+.bg-custom-50 {
+  background-color: #F8F9FA;
+}
+
+.bg-custom-800 {
+  background-color: #1A1A1A;
+}
+
+.text-custom-500 {
+  color: #8A2BE2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .experience-badge {
+    position: static;
+    margin: 2rem auto;
+  }
+
+  .hero-buttons {
+    position: relative;
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .splash-small,
+  .splash-large {
+    width: 60px;
+  }
+
+  .half-circle {
+    width: 150%;
+    left: -25%;
+  }
+}
+
+/* Additional utility classes */
+.w-fit {
+  width: fit-content;
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+/* Navigation styles */
+#main-nav ul li {
+  transition: background-color 0.3s ease;
+}
+
+#main-nav ul li:hover {
+  background-color: rgba(138, 43, 226, 0.8);
+}
+/* Extra small devices (min-width: 320px) */
+@media (min-width: 320px) {
+  .hero-container {
+    min-height: 300px;
+  }
+
+  .hero-image-container {
+    padding-top: 80%;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    padding: 0.25rem;
+  }
+
+  .hero-btn {
+    width: 100%;
+    min-width: auto;
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .experience-badge {
+    transform: scale(0.7);
+    margin: 0.5rem auto;
+  }
+
+  .half-circle {
+    height: 50%;
+  }
+
+  #main-nav {
+    padding: 0.25rem;
+  }
+
+  #main-nav ul {
+    gap: 0.25rem;
+  }
+
+  #main-nav ul li {
+    padding: 0.5rem;
+  }
+
+
+  .svg-background {
+    height: 60%;
+  }
+}
+
+@media (min-width: 640px) {
+  #main-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  #main-nav ul li {
+    width: auto;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .hero-btn {
+    width: auto;
+    min-width: 140px;
+  }
+
+  .experience-badge {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    margin: 0;
+  }
+}
+
+/* Medium devices (md) */
+@media (min-width: 768px) {
+  #main-nav ul {
+    gap: 1.5rem;
+  }
+
+  .hero-image-container {
+    max-width: 40rem;
+  }
+
+  .svg-background {
+    height: 70%;
+  }
+}
+
+/* Large devices (lg) */
+@media (min-width: 1024px) {
+  #main-nav ul {
+    gap: 2.5rem;
+  }
+
+  .hero-image-container {
+    max-width: 48rem;
+  }
+
+  .svg-background {
+    height: 80%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+#home {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  min-height: 8vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Changé de center à flex-end */
+  position: relative;
+}
+
+.hero-container {
+  @apply relative w-full max-w-2xl mx-auto flex items-end;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.svg-background {
+  @apply absolute inset-x-0 bottom-0 w-full;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Ajustement pour les grands écrans */
+@media (min-width: 1536px) {
+  #home {
+    justify-content: flex-end;
+    padding-bottom: 0;
+  }
+
+  .hero-container {
+    margin-bottom: 0;
+  }
+
+  .svg-background {
+    height: 90%;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .half-circle {
+    bottom: 0;
+    position: absolute;
+  }
+
+  #services {
+    margin-top: 0;
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.banner {
+  display: flex;
+  width: 150%;
+  height: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+.banner img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: -20px;
+}
+
+/* Added for the infinite marquee animation */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+.marquee img {
+  width: 20%;
+  margin-right: 10px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
