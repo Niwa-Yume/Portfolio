@@ -1,0 +1,65 @@
+<div class="min-h-[89vh]  bg-gradient-to-b from-zinc-50 via-custom-50 to-custom-700 flex items-center justify-center p-6">
+  <div class="w-full max-w-7xl bg-white rounded-3xl shadow-2xl overflow-hidden">
+    <!-- En-tête -->
+    <header class="bg-custom-50 p-12 text-center">
+      <h1 class="text-5xl font-bold text-custom-500 relative inline-block">
+        {{ displayText }}
+        <span class="absolute -right-2 top-0 w-1 h-full bg-custom-500 animate-blink"></span>
+      </h1>
+      <p class="mt-4 text-lg text-custom-700 max-w-2xl mx-auto">
+        Exploration de mes compétences technologiques à travers une sélection d'outils innovants
+      </p>
+    </header>
+
+    <!-- Sélecteur de catégorie -->
+    <nav class="flex justify-center space-x-4 p-6 bg-custom-100/50">
+      <button
+        *ngFor="let category of categories"
+        (click)="selectCategory(category)"
+        class="px-6 py-2 rounded-full text-custom-500 font-semibold
+               hover:bg-custom-200/30
+
+               relative group"
+        [class.bg-custom-300]="selectedCategory === category"
+        [class.text-white]="selectedCategory === category"
+      >
+        {{ category }}
+        <span
+          *ngIf="selectedCategory === category"
+          class="absolute bottom-0 left-0 w-full h-1
+                 transition-all duration-300"
+        ></span>
+      </button>
+    </nav>
+
+    <!-- Grille de technologies -->
+    <section class="p-8">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div
+          *ngFor="let tech of filteredTechnologies; let i = index"
+          class="bg-white border border-custom-100 rounded-2xl p-6
+                 transform transition-all duration-300
+                 hover:scale-105 hover:shadow-lg
+                 hover:border-custom-200
+                 flex flex-col items-center text-center"
+          [style.animationDelay.ms]="i * 100"
+        >
+          <div class="w-24 h-24 bg-custom-50 rounded-full
+                      flex items-center justify-center mb-4">
+            <img
+              [src]="tech.iconUrl"
+              [alt]="tech.name"
+              class="w-12 h-12 object-contain"
+            >
+          </div>
+          <h3 class="text-xl font-bold text-custom-600 mb-2">
+            {{ tech.name }}
+          </h3>
+          <p class="text-sm text-custom-700/80">
+            {{ tech.description }}
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
