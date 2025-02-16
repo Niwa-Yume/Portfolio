@@ -1,43 +1,70 @@
-<div id="app" class="bg-gradient-to-b from-white via-custom-50 via-custom-100 to-custom-200">
-
-  <section class="flex items-center justify-center flex-grow p-4">
-    <div class="max-w-2xl w-full p-8 shadow-2xl rounded-lg bg-white">
+<div id="app" class="bg-gradient-to-b from-zinc-50 via-custom-50 to-custom-100 min-h-[88vh]">
+  <section class="flex items-center justify-center p-4 py-8 sm:py-12 md:py-16">
+    <div class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mx-auto p-4 sm:p-6 md:p-8 shadow-2xl rounded-lg bg-white/95 backdrop-blur-sm border border-zinc-200">
+      <!-- En-tête -->
       <div class="text-center">
-        <h1 class="text-3xl font-bold mb-4">
-          J'adorerais avoir de vos nouvelles,<br />
-          Contactez-moi <span class="text-custom-500">!</span>
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-zinc-800">
+          J'adorerais avoir de vos nouvelles,<br class="hidden sm:block" />
+          Contactez-moi <span class="text-custom-600">!</span>
         </h1>
-        <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png"
-             alt="Waving Hand" width="50" height="50" class="mx-auto" />
+        <img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Waving%20Hand.png"
+          alt="Waving Hand"
+          width="40"
+          height="40"
+          class="mx-auto w-8 sm:w-10 md:w-12"
+        />
       </div>
 
-      <form class="space-y-4 mt-8" action="https://formspree.io/f/xknddkwj" method="POST">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Formulaire -->
+      <form class="space-y-4 mt-6 sm:mt-8" action="https://formspree.io/f/xknddkwj" method="POST">
+        <!-- Nom et Email -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label for="name" class="block text-sm font-medium text-zinc-700">Votre Nom</label>
-            <input type="text" id="name" name="name" required placeholder="Edward Snowden"
-                   class="mt-1 block w-full p-2 border border-zinc-300 rounded-md" />
+            <label for="name" class="block text-sm font-semibold text-zinc-800 mb-1">Votre Nom</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Edward Snowden"
+              class="mt-1 block w-full p-2.5 text-sm sm:text-base border border-zinc-300 rounded-md focus:ring-2 focus:ring-custom-600 focus:border-custom-600 outline-none bg-white shadow-sm placeholder-zinc-400"
+            />
           </div>
           <div>
-            <label for="email" class="block text-sm font-medium text-zinc-700">Votre email</label>
-            <input type="email" id="email" name="email" required placeholder="itanexmple@gmail.com"
-                   class="mt-1 block w-full p-2 border border-zinc-300 rounded-md" />
+            <label for="email" class="block text-sm font-semibold text-zinc-800 mb-1">Votre email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="itanexmple@gmail.com"
+              class="mt-1 block w-full p-2.5 text-sm sm:text-base border border-zinc-300 rounded-md focus:ring-2 focus:ring-custom-600 focus:border-custom-600 outline-none bg-white shadow-sm placeholder-zinc-400"
+            />
           </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- Intérêt et Budget -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label for="interest" class="block text-sm font-medium text-zinc-700">Ce qui vous intéresse</label>
-            <select id="interest" name="interest"
-                    class="mt-1 block w-full p-2 border border-zinc-300 rounded-md">
+            <label for="interest" class="block text-sm font-semibold text-zinc-800 mb-1">Ce qui vous intéresse</label>
+            <select
+              id="interest"
+              name="interest"
+              class="mt-1 block w-full p-2.5 text-sm sm:text-base border border-zinc-300 rounded-md focus:ring-2 focus:ring-custom-600 focus:border-custom-600 outline-none bg-white shadow-sm text-zinc-700"
+            >
               <option>Création de site web</option>
               <option>Création de bot</option>
               <option>Analyse des besoins</option>
             </select>
           </div>
           <div>
-            <label for="budget" class="block text-sm font-medium text-zinc-700">Budget du Projet</label>
-            <select id="budget" name="budget"
-                    class="mt-1 block w-full p-2 border border-zinc-300 rounded-md">
+            <label for="budget" class="block text-sm font-semibold text-zinc-800 mb-1">Budget du Projet</label>
+            <select
+              id="budget"
+              name="budget"
+              class="mt-1 block w-full p-2.5 text-sm sm:text-base border border-zinc-300 rounded-md focus:ring-2 focus:ring-custom-600 focus:border-custom-600 outline-none bg-white shadow-sm text-zinc-700"
+            >
               <option>Sélectionnez votre budget</option>
               <option>500 CHF - 1000 CHF</option>
               <option>1000 CHF - 5000 CHF</option>
@@ -46,25 +73,41 @@
           </div>
         </div>
 
+        <!-- Message -->
         <div>
-          <label for="message" class="block text-sm font-medium text-zinc-700">Message</label>
-          <textarea id="message" name="message" rows="4" required placeholder="Donner moi des détails sur votre projet ici..."
-                    class="mt-1 block w-full p-2 border border-zinc-300 rounded-md"></textarea>
+          <label for="message" class="block text-sm font-semibold text-zinc-800 mb-1">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Donner moi des détails sur votre projet ici..."
+            class="mt-1 block w-full p-2.5 text-black text-sm sm:text-base border border-zinc-300 rounded-md focus:ring-2 focus:ring-custom-600 focus:border-custom-600 outline-none bg-white shadow-sm resize-none placeholder-zinc-400"
+          ></textarea>
         </div>
 
+        <!-- Bouton Envoyer -->
         <div>
-          <button type="submit" class="w-full bg-custom-500 text-white py-2 rounded-md flex items-center justify-center">
+          <button
+            type="submit"
+            class="w-full bg-custom-600 text-white py-3 px-4 rounded-md flex items-center justify-center hover:bg-custom-700 transition-colors duration-200 text-sm sm:text-base font-semibold shadow-sm"
+          >
             Envoyer <span class="ml-2">↗</span>
           </button>
         </div>
       </form>
 
-      <div class="text-center  mt-8">
-        <p class="text-lg">Ou prenez directement rendez-vous avec moi :</p>
-        <a href="https://cal.com/julien.castro" target="_blank" class="inline-block bg-custom-500 mt-4 text-white py-2 px-4 rounded-md">Prendre un rendez-vous</a>
+      <!-- Section Rendez-vous -->
+      <div class="text-center mt-6 sm:mt-8">
+        <p class="text-base sm:text-lg text-zinc-700">Ou prenez directement rendez-vous avec moi :</p>
+
+       <a href="https://cal.com/julien.castro"
+        target="_blank"
+        class="inline-block bg-custom-600 mt-3 sm:mt-4 text-white py-3 px-6 rounded-md hover:bg-custom-700 transition-colors duration-200 text-sm sm:text-base font-semibold shadow-sm"
+        >
+        Prendre un rendez-vous
+        </a>
       </div>
     </div>
   </section>
 </div>
-
-
