@@ -431,8 +431,11 @@ body {
   .hero-image-container {
     max-width: 40rem;
   }
-  .hero-buttons .hero-btn:nth-child(2) {
+  .hero-buttons .contact:nth-child(2) {
     background: none;
+  }
+  .hero-buttons .contact:nth-child(2):hover {
+    background: #420084!important;
   }
   .svg-background {
     height: 70%;
