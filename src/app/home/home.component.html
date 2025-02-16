@@ -48,13 +48,13 @@
 
     <!-- Buttons -->
     <div class="hero-buttons glass-effect">
-      <button class="hero-btn bg-custom-500 text-white">
+      <button routerLink="/projet" class="hero-btn bg-custom-500 text-white">
         <span>Portfolio</span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor">
           <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/>
         </svg>
       </button>
-      <button class="hero-btn contact hover:bg-custom-500 hover:text-white">
+      <button routerLink="/contact" class="hero-btn contact hover:bg-custom-500 hover:text-white">
         <span class="text-white">Contact</span>
         <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960" fill="currentColor">
           <path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/>
@@ -284,12 +284,10 @@
           <p class="text-gray-600">Clients Satisfaits</p>
         </div>
       </div>
-      <a href="/contact/index.html">
-        <button
+
+        <button routerLink="/contact"
           class="mt-8 px-8 py-3 bg-custom-500 text-white rounded-full hover:bg-custom-800 transition">Choisissez-moi
         </button>
-      </a>
-
     </div>
   </div>
 </section>
