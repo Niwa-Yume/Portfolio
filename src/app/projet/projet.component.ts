@@ -23,7 +23,7 @@ export class ProjetComponent {
       title: "Noctinium",
       date: "2023",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      image: "/image projet/noctinium.png",
+      image: "../../assets/logo noctinium nouveau.png",
       link: "https://noctinium.com",
       description: "Plateforme web dynamique avec gestion de base de données avancée."
     },
@@ -31,7 +31,7 @@ export class ProjetComponent {
       title: "Bot de web crawling et de web scraping",
       date: "2023",
       tags: ["Python", "Scrapy"],
-      image: "/image projet/web scrapping.png",
+      image: "../../assets/projet/web scrapping.png",
       link: "https://github.com/Niwa-Yume/Bot-scrapy",
       description: "Outil automatisé de collecte et d'extraction de données web."
     },
@@ -39,7 +39,7 @@ export class ProjetComponent {
       title: "Portfolio HTML CSS",
       date: "2023",
       tags: ["HTML", "CSS"],
-      image: "/image projet/portefolio-html-css.png",
+      image: "../../assets/projet/portefolio-html-css.png",
       link: "https://niwa-yume.github.io/Portefolio_HTML_CSS/",
       description: "Portfolio personnel réalisé avec des technologies web classiques."
     },
@@ -47,7 +47,7 @@ export class ProjetComponent {
       title: "Portefolio TailwindCSS",
       date: "2023",
       tags: ["HTML", "CSS", "TailwindCSS"],
-      image: "/image projet/portefolio-tailwindcss.png",
+      image: "../../assets/projet/portefolio-tailwindcss.png",
       link: "https://niwa-yume.github.io/Portefolio-tailwindcss/",
       description: "Portfolio moderne et responsive utilisant Tailwind CSS."
     },
@@ -55,7 +55,7 @@ export class ProjetComponent {
       title: "Bot telegram",
       date: "2023",
       tags: ["Python", "Telegram"],
-      image: "/image projet/bot telegram.jpg",
+      image: "../../assets/projet/bot telegram.jpg",
       link: "https://github.com/Niwa-Yume/Geneva-bot",
       description: "Bot Telegram personnalisé avec des fonctionnalités avancées."
     },
@@ -63,7 +63,7 @@ export class ProjetComponent {
       title: "Club des bergers belges",
       date: "2023",
       tags: ["WordPress"],
-      image: "/image projet/berger-belge.png",
+      image: "../../assets/projet/berger-belge.png",
       link: "https://bergerbelgegeneve.ch/",
       description: "Site web pour le club des bergers belges de Genève."
     },
@@ -71,7 +71,7 @@ export class ProjetComponent {
       title: "Scoubi dog maitre chien",
       date: "2024",
       tags: ["WordPress"],
-      image: "/image projet/scoubi fog.png",
+      image: "../../assets/projet/scoubi fog.png",
       link: "https://scoubi-dog.ch/",
       description: "Site web pour un service de dressage canin."
     },
@@ -79,7 +79,7 @@ export class ProjetComponent {
       title: "Petit Onion",
       date: "2024",
       tags: ["TailwindCSS", "Laravel", "JavaScript", "PHP", "MySQL"],
-      image: "/image projet/petit-onion.png",
+      image: "../../assets/projet/petit-onion.png",
       link: "https://www.petitonion.com",
       description: "Application web complète avec une stack technologique moderne."
     },
@@ -87,23 +87,15 @@ export class ProjetComponent {
       title: "App météo API + BOT AI",
       date: "2024",
       tags: ["API", "Python", "Telegram"],
-      image: "/image projet/app-meteo.png",
+      image: "../../assets/projet/app-meteo.png",
       link: "https://niwa-yume.github.io/premiere-app-meteo/",
       description: "Application météo intelligente avec intégration d'API et bot Telegram."
-    },
-    {
-      title: "Chalet Hirdondelle",
-      date: "2024",
-      tags: ["HTML", "CSS", "TailwindCSS", "JavaScript"],
-      image: "/image projet/chalet.png",
-      link: "https://chalet-hirondelle.vercel.app/",
-      description: "Site web vitrine pour un chalet de location."
     },
     {
       title: "Belle vu cap martin",
       date: "2024",
       tags: ["HTML", "CSS", "TailwindCSS", "JavaScript"],
-      image: "/image projet/bellevue.png",
+      image: "../../assets/projet/bellevue.png",
       link: "https://bellevue-cap-martin.vercel.app/",
       description: "Site web présentant une vue panoramique exceptionnelle."
     }
