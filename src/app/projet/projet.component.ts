@@ -90,14 +90,6 @@ export class ProjetComponent {
       image: "../../assets/projet/app-meteo.png",
       link: "https://niwa-yume.github.io/premiere-app-meteo/",
       description: "Application météo intelligente avec intégration d'API et bot Telegram."
-    },
-    {
-      title: "Belle vu cap martin",
-      date: "2024",
-      tags: ["HTML", "CSS", "TailwindCSS", "JavaScript"],
-      image: "../../assets/projet/bellevue.png",
-      link: "https://bellevue-cap-martin.vercel.app/",
-      description: "Site web présentant une vue panoramique exceptionnelle."
     }
   ];
 
