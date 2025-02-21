@@ -93,7 +93,7 @@ export class OutilsComponent implements OnInit {
       category: 'backend'
     },
     {
-      name: 'Java Spring',
+      name: 'JEE et Springboot',
       iconUrl: 'https://www.svgrepo.com/show/452234/java.svg',
       description: 'Enterprise Java framework',
       category: 'backend'
@@ -101,7 +101,7 @@ export class OutilsComponent implements OnInit {
     {
       name: 'Python',
       iconUrl: 'https://www.svgrepo.com/show/452091/python.svg',
-      description: 'Versatile programming language',
+      description: 'Script, bot et automatisation ',
       category: 'backend'
     }
   ];
