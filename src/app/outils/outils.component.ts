@@ -22,19 +22,19 @@ export class OutilsComponent implements OnInit {
     {
       name: 'Copilot AI',
       iconUrl: 'https://registry.npmmirror.com/@lobehub/icons-static-png/1.22.0/files/light/githubcopilot.png',
-      description: 'AI-powered coding assistant',
+      description: 'Un assistant de code dans un IDE',
       category: 'ai'
     },
     {
       name: 'GPT',
       iconUrl: 'https://www.svgrepo.com/show/306500/openai.svg',
-      description: 'Advanced language model',
+      description: 'GPT, Claude, et bien d\'autre modèle',
       category: 'ai'
     },
     {
       name: 'Docker',
       iconUrl: 'https://www.svgrepo.com/show/303231/docker-logo.svg',
-      description: 'Containerization platform',
+      description: 'Plateforme de conteneurisation',
       category: 'ai'
     },
     {
@@ -42,12 +42,27 @@ export class OutilsComponent implements OnInit {
       iconUrl: 'https://www.svgrepo.com/show/535422/git-merge.svg',
       description: 'Version control system',
       category: 'ai'
+    },{
+      name: 'Figma',
+      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/Figma/Figma.png',
+      description: 'Outils de design, wireframe et de prototype.',
+      category: 'ai'
+    },{
+      name: 'IDE Intelliji',
+      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/IntelliJ%20IDEA/IntelliJ%20IDEA.png',
+      description: 'Un des meilleurs IDE',
+      category: 'ai'
+    },{
+      name: 'Github',
+      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/GitHub/GitHub.png',
+      description: 'Outil de version control',
+      category: 'ai'
     },
 
     // Frontend
     {
       name: 'Tailwind CSS',
-      iconUrl: 'https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg',
+      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/tailwind%20css/Tailwindcss.png',
       description: 'Utility-first CSS framework',
       category: 'frontend'
     },
@@ -59,13 +74,13 @@ export class OutilsComponent implements OnInit {
     },
     {
       name: 'Angular',
-      iconUrl: 'https://logosandtypes.com/wp-content/uploads/2024/01/angular.svg',
-      description: 'Comprehensive framework',
+      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/Angular/Angular.png',
+      description: 'Mon tout premier Framework, fait par Google',
       category: 'frontend'
     },
     {
       name: 'TypeScript',
-      iconUrl: 'https://www.svgrepo.com/show/354478/typescript-icon.svg',
+      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/TypeScript/TypeScript.png',
       description: 'Typed JavaScript superset',
       category: 'frontend'
     },
@@ -73,7 +88,7 @@ export class OutilsComponent implements OnInit {
     // Backend
     {
       name: 'Laravel',
-      iconUrl: 'https://www.svgrepo.com/show/353985/laravel.svg',
+      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/Laravel/LaravelTransparent.png',
       description: 'PHP web framework',
       category: 'backend'
     },
