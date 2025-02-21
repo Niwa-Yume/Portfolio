@@ -40,7 +40,7 @@ export class OutilsComponent implements OnInit {
     {
       name: 'Git',
       iconUrl: 'https://www.svgrepo.com/show/535422/git-merge.svg',
-      description: 'Version control system',
+      description: 'Version control',
       category: 'ai'
     },{
       name: 'Figma',
