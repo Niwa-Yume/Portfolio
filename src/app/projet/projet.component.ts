@@ -28,14 +28,6 @@ export class ProjetComponent {
       description: "Plateforme web dynamique avec gestion de base de données avancée."
     },
     {
-      title: "Bot de web crawling et de web scraping",
-      date: "2023",
-      tags: ["Python", "Scrapy"],
-      image: "../../assets/projet/web scrapping.png",
-      link: "https://github.com/Niwa-Yume/Bot-scrapy",
-      description: "Outil automatisé de collecte et d'extraction de données web."
-    },
-    {
       title: "Portfolio HTML CSS",
       date: "2023",
       tags: ["HTML", "CSS"],
