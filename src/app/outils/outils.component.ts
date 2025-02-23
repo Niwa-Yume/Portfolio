@@ -20,9 +20,9 @@ export class OutilsComponent implements OnInit {
   technologies: Technology[] = [
     // AI & Tools
     {
-      name: 'Copilot AI',
-      iconUrl: 'https://registry.npmmirror.com/@lobehub/icons-static-png/1.22.0/files/light/githubcopilot.png',
-      description: 'Un assistant de code dans un IDE',
+      name: 'Node.JS',
+      iconUrl: 'https://raw.githubusercontent.com/Ender-Wiggin2019/ServiceLogos/main/Node.js/Node.js.png',
+      description: 'un environnement d’exécution single-thread, open-source et multi-plateforme',
       category: 'ai'
     },
     {
@@ -33,29 +33,35 @@ export class OutilsComponent implements OnInit {
     },
     {
       name: 'Docker',
-      iconUrl: 'https://www.svgrepo.com/show/303231/docker-logo.svg',
+      iconUrl: 'https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Docker/DockerLogo.png',
       description: 'Plateforme de conteneurisation',
       category: 'ai'
     },
     {
-      name: 'Git',
-      iconUrl: 'https://www.svgrepo.com/show/535422/git-merge.svg',
+      name: 'GitLab',
+      iconUrl: 'https://raw.githubusercontent.com/Ender-Wiggin2019/ServiceLogos/main/GitLab/GitLab.png',
       description: 'Version control',
       category: 'ai'
     },{
       name: 'Figma',
-      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/Figma/Figma.png',
+      iconUrl: 'https://raw.githubusercontent.com/murimurikyu/CuteVtubingThing/main/Figma.png',
       description: 'Outils de design, wireframe et de prototype.',
       category: 'ai'
     },{
       name: 'IDE Intelliji',
-      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/IntelliJ%20IDEA/IntelliJ%20IDEA.png',
+      iconUrl: 'https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/IntelliJIDEA/IntellijLogo.png',
       description: 'Un des meilleurs IDE',
       category: 'ai'
     },{
       name: 'Github',
-      iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/GitHub/GitHub.png',
+      iconUrl: 'https://raw.githubusercontent.com/murimurikyu/CuteVtubingThing/main/GitHub.png',
       description: 'Outil de version control',
+      category: 'ai'
+    },
+    {
+      name: 'Buns',
+      iconUrl: 'https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogo.png',
+      description: 'Gestionnaire de paquet pour Node.js',
       category: 'ai'
     },
 
@@ -68,7 +74,7 @@ export class OutilsComponent implements OnInit {
     },
     {
       name: 'Vue.js',
-      iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg',
+      iconUrl: 'https://raw.githubusercontent.com/Ender-Wiggin2019/ServiceLogos/main/Vue/Vue.png',
       description: 'Progressive JavaScript framework',
       category: 'frontend'
     },
@@ -83,6 +89,11 @@ export class OutilsComponent implements OnInit {
       iconUrl: 'https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/refs/heads/main/TypeScript/TypeScript.png',
       description: 'Typed JavaScript superset',
       category: 'frontend'
+    },{
+      name: 'Vite',
+      iconUrl: 'https://raw.githubusercontent.com/Ender-Wiggin2019/ServiceLogos/main/Vite/Vite.png',
+      description: 'Vite est un serveur de développement Web rapide qui peut servir des fichiers sur disque en tant que ressources statiques',
+      category: 'frontend'
     },
 
     // Backend
@@ -94,13 +105,13 @@ export class OutilsComponent implements OnInit {
     },
     {
       name: 'JEE et Springboot',
-      iconUrl: 'https://www.svgrepo.com/show/452234/java.svg',
+      iconUrl: 'https://raw.githubusercontent.com/Ender-Wiggin2019/ServiceLogos/main/Java/Java.png',
       description: 'Enterprise Java framework',
       category: 'backend'
     },
     {
       name: 'Python',
-      iconUrl: 'https://www.svgrepo.com/show/452091/python.svg',
+      iconUrl: 'https://raw.githubusercontent.com/Ender-Wiggin2019/ServiceLogos/main/Python/Python.png',
       description: 'Script, bot et automatisation ',
       category: 'backend'
     }
