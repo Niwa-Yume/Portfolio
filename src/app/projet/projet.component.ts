@@ -82,6 +82,22 @@ export class ProjetComponent {
       image: "../../assets/projet/app-meteo.png",
       link: "https://niwa-yume.github.io/premiere-app-meteo/",
       description: "Application météo intelligente avec intégration d'API et bot Telegram."
+    },
+    {
+      title: "Tech Tool Box",
+      date: "2024",
+      tags: ["API", "Angular", "Tailwind CSS, Supabase"],
+      image: "../../assets/projet/techtoolbox.png",
+      link: "https://tech-tool-box.vercel.app/",
+      description: "Aggrégation d'outil pour la programmation ."
+    },
+    {
+      title: "Résidence Bellevue",
+      date: "2024",
+      tags: [ "Angular", "Tailwind CSS"],
+      image: "../../assets/projet/bellevue.png",
+      link: "https://bellevue-cap-martin.vercel.app/",
+      description: "Application de gestion de résidence avec Angular et Tailwind CSS."
     }
   ];
 
