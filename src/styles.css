@@ -328,7 +328,12 @@ body {
 .duration-300 {
   transition-duration: 300ms;
 }
-
+main {
+  padding-top: 6rem; /* ou 96px */
+}
+.page-content {
+  padding-top: 6rem;
+}
 /* Navigation styles */
 #main-nav ul li {
   transition: background-color 0.3s ease;
