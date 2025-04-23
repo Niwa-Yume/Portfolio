@@ -63,4 +63,7 @@ export class HomeComponent {
     this.selectedExperience = null;
     document.body.classList.remove('modal-open');
   }
+  getExperienceDetails(): string[] {
+    return this.selectedExperience?.details?.split('\n') ?? [];
+  }
 }
