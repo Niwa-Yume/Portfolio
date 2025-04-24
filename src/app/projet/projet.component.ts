@@ -20,6 +20,14 @@ interface Project {
 export class ProjetComponent {
   projects: Project[] = [
     {
+      title: "Carte Holo Pokémon",
+      date: "2025",
+      tags: ["Angular", "CSS", "HTML"],
+      image: "../../assets/projet/carte-pokemon.png",
+      link: "https://carte-pokemon-holo-niwa.vercel.app/",
+      description: "Basé sur le projet connu de carte holo Pokémon, j'ai tenté une version moi-même."
+    },
+    {
       title: "Noctinium",
       date: "2023",
       tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
